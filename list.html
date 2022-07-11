@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--https://lngnat.tistory.com/entry/%EA%B2%8C%EC%8B%9C%ED%8C%90-%EB%A7%8C%EB%93%A4%EA%B8%B0-4-%EB%AA%A9%EB%A1%9D-html-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0?category=870771-->
+    <link rel="stylesheet" href="list.css">
+    <title>list</title>
 </head>
 <body>
     <div>
@@ -12,10 +12,61 @@
             목록 화면
         </h2>
     </div>
-    <div>
-        <button>
+    <div class="write-btn" >
+        <!-- <button onclick="window.location.href='write.html'">
             등록
-        </button>
+        </button> -->
     </div>
+    <div>
+        <input type="button" id="write-button" value="등록"/>
+    </div>
+    <table>
+        <tr>
+            <td class="wrtr">
+                작성자
+            </td>
+            <td class="ttl">
+                제목
+            </td>
+            <td class="dt">
+                작성일
+            </td>
+        </tr>
+        <tr>
+            <td class="writer">
+                작성자 1
+            </td>
+            <td class="ttl">
+                제목 1
+            </td>
+            <td class="dt">
+                작성일 1
+            </td>
+        </tr>
+        <tr>
+            <td class="writer">
+                작성자 2
+            </td>
+            <td class="ttl">
+                제목 2
+            </td>
+            <td class="dt">
+                작성일 2
+            </td>
+        </tr>
+    </table>
+    <div class="contents">
+        <p class="pic">사진</p>
+        <p class="con">게시글</p>
+    </div>
+    <script>
+        const write = document.getElementById('write-button');
+        // write.addEventListener('click', function(){
+        //     location.href = "write.html"
+        // });
+        write.onclick=function(){
+            location.href='write.html';
+        }
+    </script>
 </body>
 </html>
