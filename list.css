@@ -1,0 +1,62 @@
+body {
+  text-align: center;
+}
+
+table {
+  border: 1px solid;
+  text-align: center;
+  margin: 0 auto;
+}
+
+table td {
+  border: 1px solid;
+}
+
+.wrtr {
+  width: 100px;
+}
+
+.ttl {
+  width: 500px;
+}
+
+.write-btn {
+  color: #5719ff;
+  width: 24px;
+  height: 16px;
+  font-size: 1rem;
+}
+
+#write-button {
+  width: 50px;
+  height: 30px;
+  color: white;
+  background-color: #5719ff;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contents {
+  border: 1px solid;
+  width: 500px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: start;
+}
+
+.pic {
+  border: 1px solid;
+  padding: 0%;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.con {
+  border: 1px solid;
+  width: auto;
+  height: ;
+}
