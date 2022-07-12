@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/view.css">
+    <title>상세뷰</title>
 </head>
 <body>
-    <div>
-        <h2>등록 화면</h2>
+    <div class="logo">상세뷰</div>
+    
+    <div class="post">
+        <div class="title">
+            제목
+        </div>
+        <div class="writer_date">
+            <p>작성자</p>
+            <p>작성일</p>
+        </div>
+        <div class="contents">내용</div>
     </div>
-    <div>
-        <button>취소</button>
-        <button>초기화</button>
-        <button>등록</button>
+    <div class="return" id="return">
+        <input type="button" value="돌아가기" class="return_button"/>
     </div>
-    <div>
-        <p>작성일</p>
-        <p>내용</p>
-    </div>
-    <div>
-        <p>작성자</p>
-        <p>내용</p>
-    </div>
-    <div>
-        <p>제목</p>
-        <p>내용</p>
-    </div>
-    <div>
-        <p>글 내용</p>
-        <p>내용</p>
-    </div>
+
+<script>
+    back=document.getElementById('return')
+    back.onclick=function(){
+        location.href='list_div.html'
+    }
+</script>
 </body>
 </html>

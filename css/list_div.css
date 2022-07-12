@@ -1,0 +1,79 @@
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#write_button {
+  background-color: rgb(255, 159, 159);
+  border: 0;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  margin: 0 0 0 75%;
+  cursor: pointer;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  background-color: rgb(203, 190, 216);
+  width: 500px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.picture {
+  /* border: 1px solid; */
+  width: 200px;
+  height: 200px;
+  margin: 0 5% 0 0;
+}
+
+.text {
+  /* border: 1px solid; */
+  vertical-align: text-top;
+  width: 50%;
+  height: 200px;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.title_margin {
+  height: 20px;
+}
+
+.contents {
+  height: 96px;
+  font-size: 24px;
+  margin: 0;
+  /* 단어 단위로 끊기 */
+  word-wrap: break-word;
+
+  /* 넘치는 글자 숨기기 */
+  overflow: hidden;
+
+  /* 글자수 제한하려면 아래 2개를 꼭 써야함 */
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+
+  -webkit-line-clamp: 3;
+}
+
+.contents_margin {
+  height: 35px;
+}
+
+.date {
+  font-size: 12px;
+  margin: 0;
+}

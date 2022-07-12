@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <title>list</title>
+</head>
+<body>
+    <div>
+        <h2>
+            목록 화면
+        </h2>
+    </div>
+    <div class="write-btn" >
+        <!-- <button onclick="window.location.href='write.html'">
+            등록
+        </button> -->
+    </div>
+    <div>
+        <input type="button" id="write-button" value="등록"/>
+    </div>
+    <table>
+        <tr>
+            <td class="picture">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTBfMjY2%2FMDAxNjU0ODQ1NTYxNTAz.SX6EYc6EHm3QGIHotelqLnCJofsYV4LcE5kKHampnsMg.Y8PLnE87Uuh5xrGonMF6Kk6NWLaGeGXcpkY5xHbh3Xog.JPEG.black_pig_%2F%25BE%25C8%25B5%25BF%25C2%25F2%25B4%25DF%25B0%25F1%25B8%25F1_%252821%2529.jpg&type=a340" width="150px" height="150px" />
+            </td>
+            <td class="post">
+                <span class="title">제목 </span><br />
+                <span class="contents">내용</span><br />
+                <span class="date">작성일</span><br />
+            </td>
+        </tr>
+        <tr>
+            <td class="picture">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MjBfNjEg%2FMDAxNjU1NzEzMzE2MjIy.ZdjDIExmnwIIi2X8mQFZgIyfrmf9uuUJSKOy0VYzMFEg._RlF0oAluAhvpLARZTMtWM6lb0nBnZAx0p6qSOWMRmsg.JPEG.is016n%2F%25BC%25F6%25BF%25F8%25BF%25D5%25B0%25A5%25BA%25F1%25C5%25EB%25B4%25DF_%25C6%25C4%25C1%25D6%25B9%25AE%25BB%25EA%25C1%25A1_%25285%2529.JPG&type=a340" width="150px" height="150px">
+            </td>
+            <td class="post">
+                <span class="title">제목 </span><br />
+                <span class="contents">내용</span><br />
+                <span class="date">작성일</span><br />
+            </td>
+        </tr>
+        <tr>
+            <td class="picture">
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTZfMzEg%2FMDAxNjU1MzM3MTM5Njg5.LAOy-mD0t_YJcJi30WzrlZ7kdem6CwZsyUZs3Qo3p_Ig.mQbu86uBpYZEMmNqFy95Ergnus3TSWNQhcfqeqMefCcg.JPEG.oooo0928%2Foutput_3866983363.jpg&type=a340" width="150px" height="150px">
+            </td>
+            <td class="post">
+                <span class="title">제목 </span><br />
+                <span class="contents">내용</span><br />
+                <span class="date">작성일</span><br />
+            </td>
+        </tr>
+    </table>
+    <script>
+        const write = document.getElementById('write-button');
+        // write.addEventListener('click', function(){
+        //     location.href = "write.html"
+        // });
+        write.onclick=function(){
+            location.href='write.html';
+        }
+    </script>
+</body>
+</html>

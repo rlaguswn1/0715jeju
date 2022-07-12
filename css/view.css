@@ -1,0 +1,45 @@
+.logo {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.post {
+  width: 500px;
+  padding: 10px;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 32px;
+  /* text-align: center; */
+}
+
+.writer_date {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents {
+  margin: 0;
+}
+
+.return {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.return input {
+  background-color: rgb(255, 159, 159);
+  border: 0;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  margin: 0 auto;
+  cursor: pointer;
+}

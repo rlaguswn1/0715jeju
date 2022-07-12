@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/list_div.css">
+    <title>list_div</title>
+</head>
+<body>
+    <div class="logo">목록</div>
+    <input type="button" id="write_button" value="등록"></span>
+    <div class="post">
+        <div class="picture">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTBfMjY2%2FMDAxNjU0ODQ1NTYxNTAz.SX6EYc6EHm3QGIHotelqLnCJofsYV4LcE5kKHampnsMg.Y8PLnE87Uuh5xrGonMF6Kk6NWLaGeGXcpkY5xHbh3Xog.JPEG.black_pig_%2F%25BE%25C8%25B5%25BF%25C2%25F2%25B4%25DF%25B0%25F1%25B8%25F1_%252821%2529.jpg&type=a340" width="200px" height="200px" />
+        </div>
+        <div class="text">
+            <p class="title" id="title">찜닭팟 구해유</p>
+            <div class="title_margin"></div>                
+            <p class="contents">
+                드실분~~ 엔빵엔빵~~ 오늘~~ 내용이 길면 어케되나요 잘라주세요~
+            </p>
+            <div class="contents_margin"></div>
+            <p class="date">2022. 07. 12</p>
+        </div>
+    </div>
+
+<script>
+    write_button = document.getElementById('write_button')
+    write_button.onclick=function(){location.href='write.html'}
+
+    post = document.getElementById('title')
+    post.onclick=function(){
+        location.href='view.html'
+    }
+</script>
+
+</body>
+</html>
