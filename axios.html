@@ -1,0 +1,75 @@
+<!-- axios 참고용 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>json-server-test</title>
+</head>
+<body>
+    <div id="root">hello</div>
+    <script>
+        // 읽기
+        // get 안의 링크는 어디서 난거냐? >> db를 직접 만든거였음. npx json-server --watch db.json --p 3200해서 나온 주소/id 몇번
+        // axios.get("http://localhost:3200/posts/1")
+        // .then((res) => {
+        //     console.log(res); 
+        //     console.log(res.data);
+        //     document.getElementById("root").innerHTML = res.data.id;
+        // });
+        
+        // 쓰기
+        // axios.post("http://localhost:3200/posts/", {
+        //     id: 2,
+        //     title: "I love huhs",
+        //     author: "hyunju"
+        // });
+
+        // 적은 내용 그대로 덮어쓰기
+        // axios.put("http://localhost:3200/posts/1", {
+        //     id: 1,
+        //     title: "I want to quit",
+        //     author: "hyunju kim"
+        // });
+
+        // 달라진 사항만 적용
+        // axios.patch("http://localhost:3200/posts/1", {
+        //     id: 1,
+        // title: "I love vacation"
+        //     author: "hyunju kim"
+        // });
+
+        // 삭제
+        // axios.delete("http://localhost:3200/posts/1");
+
+//json 참고
+// a='hyunju'
+
+// const data = `
+//     {
+//         "name": "`+a+`",
+//         "age" : 25
+//     }
+// `;
+// const result=JSON.parse(data); // json을 객체로 만들어줌
+// const result2=JSON.stringify(result); // 객체를 json으로 만들어줌
+
+// db 참고
+// {
+//     "posts": [
+//       {
+//         "id": 2,
+//         "title": "I love huhs",
+//         "author": "hyunju"
+//       }
+//     ],
+//     "comments": [],
+//     "profile": {
+//       "name": "typicode"
+//     }
+//   }
+    </script>
+</body>
+</html>

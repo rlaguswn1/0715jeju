@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/write.css">
     <title>write</title>
 </head>
@@ -11,13 +12,14 @@
     <div class="post">
         <div class="title">
              <input type="text" id='title' placeholder="제목을 입력">
+             <input type="text" id='writer' placeholder="작성자를 입력">
         </div>
         <br />
         <div class="contents">
             <input type="text" id='contents' placeholder="내용을 입력"/>
         </div>
     </div>
-
+    <br />
     <div class="buttons">
         <input type="button" id="return" value="취소" />
         <input type="reset" id='reset' value="초기화" />
@@ -25,15 +27,68 @@
     </div>
 
 <script>
+
+    // 등록 누르면 >> 완료 알럿, 닫으면 리스트로 이동
     submit = document.getElementById('submit')
     submit.onclick=function(){
+
+        // 사용자가 입력한 제목, 작성자, 내용 저장
+        const title=document.getElementById('title').value.toString();
+        const contents=document.getElementById('contents').value.toString();
+        const writer=document.getElementById('writer').value.toString();
+        
+        // 날짜 클래스 객체
+        const date= new Date();
+
+        //연도 갖고오기
+        const year=date.getFullYear().toString();
+
+        // 월, 일 갖고와서 일단 앞에 0을 붙이고, 뒤에서부터 2자리 슬라이스
+        const month=('0'+(date.getMonth()+1)).slice(-2).toString();
+        const day=('0'+(date.getDate()+1)).slice(-2).toString();
+
+        // 전체 날짜
+        const fullDate=year+'. '+month+'. '+day+'.';
+
+        // // 적은 내용 그대로 덮어쓰기
+        // axios.put("http://localhost:3200/posts/", {
+        //         writer:writer,
+        //         title:title,
+        //         contents:contents,
+        //         date:fullDate
+        // });
+
+        // 달라진 사항만 적용
+        axios.put("http://localhost:3200/posts/", {
+        writer:writer,
+        title:title,
+        contents:contents,
+        date:fullDate
+        });
+        
+
+        // const data = `
+        //     {
+        //         "id":,
+        //         "writer":"`+writer+`",
+        //         "title":"`+title+`",
+        //         "contents":"`+contents+`",
+        //         "date":"`+fullDate+`"       
+        //     }
+        // `
+
+        // const result=JSON.parse(data);
+        // console.log(data)
+
+        
+
         alert("등록이 완료되었습니다.");
-        location.href='list_div.html'
+        location.href='list_div.html';
     }
 
-    back=document.getElementById('return')
+    back=document.getElementById('return');
     back.onclick=function(){
-        location.href='list_div.html'
+        location.href='list_div.html';
     }
 
     // 초기화 버튼 >> 문서에서 input 태그를 다 받아와서 배열에 담고, i번째 요소의 타입이 텍스트면 값을 공백으로 넣어라
@@ -44,8 +99,7 @@
                 inputs[i].value="";
             }
         }
-    }
-    
+    }    
 </script>
 </body>
 </html>
