@@ -1,9 +1,59 @@
 {
   "posts": [
     {
+      "id": 1,
+      "writer": null,
+      "title": null,
+      "contents": null,
+      "date": null
+    },
+    {
+      "id": 2,
+      "writer": "test",
+      "title": "ttest",
+      "contents": "tttest",
+      "date": "2022. 07. 14."
+    },
+    {
+      "id": 3,
       "writer": "작성자",
       "title": "제목",
       "contents": "내용",
+      "date": "2022. 07. 14."
+    },
+    {
+      "id": 4,
+      "writer": "작성자 3",
+      "title": "제목 3",
+      "contents": "내용 3",
+      "date": "2022. 07. 14."
+    },
+    {
+      "id": 5,
+      "writer": "작성자 5",
+      "title": "제목 5",
+      "contents": "내용 5",
+      "date": "2022. 07. 14."
+    },
+    {
+      "id": 6,
+      "writer": "작성자 6",
+      "title": "제목 6",
+      "contents": "내용 6",
+      "date": "2022. 07. 14."
+    },
+    {
+      "id": 7,
+      "writer": "ㄴㄷㅅㄴㄷㅅ",
+      "title": "ㅅㄷㄴㅅ",
+      "contents": "ㄴㄷㅅㄴㄷ",
+      "date": "2022. 07. 14."
+    },
+    {
+      "id": 8,
+      "writer": "sfes",
+      "title": "eesf",
+      "contents": "fesefsef",
       "date": "2022. 07. 14."
     }
   ]

@@ -53,24 +53,22 @@
 }
 
 .contents {
-  height: 96px;
-  font-size: 24px;
+  height: 54px;
+  font-size: 18px;
   margin: 0;
   /* 단어 단위로 끊기 */
   word-wrap: break-word;
-
   /* 넘치는 글자 숨기기 */
   overflow: hidden;
-
-  /* 글자수 제한하려면 아래 2개를 꼭 써야함 */
-  -webkit-box-orient: vertical;
   display: -webkit-box;
-
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  line-height: 18px;
 }
 
 .contents_margin {
-  height: 35px;
+  height: 75px;
 }
 
 .date {
