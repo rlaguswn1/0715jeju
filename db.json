@@ -1,59 +1,45 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": 0,
       "writer": null,
       "title": null,
       "contents": null,
       "date": null
     },
     {
-      "id": 2,
+      "id": 1,
       "writer": "test",
-      "title": "ttest",
-      "contents": "tttest",
+      "title": "test",
+      "contents": "test",
       "date": "2022. 07. 14."
     },
     {
+      "id": 2,
+      "writer": "test",
+      "title": "test",
+      "contents": "test",
+      "date": "2022. 07. 13."
+    },
+    {
       "id": 3,
-      "writer": "작성자",
-      "title": "제목",
-      "contents": "내용",
+      "writer": "test",
+      "title": "test",
+      "contents": "test",
       "date": "2022. 07. 14."
     },
     {
       "id": 4,
-      "writer": "작성자 3",
-      "title": "제목 3",
-      "contents": "내용 3",
+      "writer": "작성자",
+      "title": "test",
+      "contents": "내용",
       "date": "2022. 07. 14."
     },
     {
       "id": 5,
-      "writer": "작성자 5",
-      "title": "제목 5",
-      "contents": "내용 5",
-      "date": "2022. 07. 14."
-    },
-    {
-      "id": 6,
-      "writer": "작성자 6",
-      "title": "제목 6",
-      "contents": "내용 6",
-      "date": "2022. 07. 14."
-    },
-    {
-      "id": 7,
-      "writer": "ㄴㄷㅅㄴㄷㅅ",
-      "title": "ㅅㄷㄴㅅ",
-      "contents": "ㄴㄷㅅㄴㄷ",
-      "date": "2022. 07. 14."
-    },
-    {
-      "id": 8,
-      "writer": "sfes",
-      "title": "eesf",
-      "contents": "fesefsef",
+      "writer": "느헝",
+      "title": "우오아아아앙ㅇ",
+      "contents": "우오왕아앙ㅇ 리스트가 나와요요오오옹ㅇㅇ 말줄임도 잘되나 한 번 볼까용ㅇㅇ 되면 축배다! 근데 이거 글쓸때 줄바꿈도 해야겟네",
       "date": "2022. 07. 14."
     }
   ]

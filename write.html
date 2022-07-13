@@ -45,7 +45,7 @@
 
         // 월, 일 갖고와서 일단 앞에 0을 붙이고, 뒤에서부터 2자리 슬라이스
         const month=('0'+(date.getMonth()+1)).slice(-2).toString();
-        const day=('0'+(date.getDate()+1)).slice(-2).toString();
+        const day=('0'+(date.getDate())).slice(-2).toString();
 
         // 전체 날짜
         const fullDate=year+'. '+month+'. '+day+'.';
@@ -53,9 +53,7 @@
         // id 계산
         axios.get("http://localhost:3200/posts/")
         .then((res) => {
-            console.log(res); 
-            console.log(res.data);
-            const num = res.data.length+1;
+            const num = res.data.length;
             return num;
         })
         // 계산한 id 포함해서 글 올리기
