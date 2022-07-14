@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="css/view.css">
     <title>상세뷰</title>
 </head>
@@ -10,20 +11,48 @@
     <div class="logo">상세뷰</div>
     
     <div class="post">
-        <div class="title">
+        <div class="title" id="title">
             제목
         </div>
         <div class="writer_date">
-            <p>작성자</p>
-            <p>작성일</p>
+            <p id="writer">작성자</p>
+            <p id="date">작성일</p>
         </div>
-        <div class="contents">내용</div>
+        <div class="contents" id="contents">내용</div>
     </div>
     <div class="return" id="return">
         <input type="button" value="돌아가기" class="return_button"/>
     </div>
 
 <script>
+    var id=prompt("몇번 게시글?");
+    // 불러오기
+    axios.get('http://localhost:3200/posts')
+    .then((res)=>{
+        title=res.data[id].title;
+        writer=res.data[id].writer;
+        date=res.data[id].date;
+        contents=res.data[id].contents;
+
+        //for문 실패..
+        // const arr = [title, writer, date, contents]
+        // const arr2 = ['title', 'writer', 'date', 'contents']
+
+        // for (let i = 0; i<arr.length; i++){
+        //     id="'"+arr2[i]+"'"
+        //     console.log(id)
+        //     console.log(arr[i])
+        //     document.getElementById(id).textContent = arr[i];
+        // }
+
+        document.getElementById('title').textContent=title;
+        document.getElementById('writer').textContent=writer;
+        document.getElementById('date').textContent=date;
+        document.getElementById('contents').textContent=contents;        
+        console.log(document.getElementById('contents'))
+    })
+
+    //돌아가기
     back=document.getElementById('return')
     back.onclick=function(){
         location.href='list_div.html'

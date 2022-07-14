@@ -18,30 +18,24 @@
     .then((res) => {
 
         // 등록순
-        for (let i=1; i<=res.data.length;i++){
-                console.log(res.data[i])
-
-        // 최신순
-        // for (let i=res.data.length; i=0 ;i--){
-        //         console.log(res.data[i])
-
+        for (let i=1; i<res.data.length;i++){
         // 변수 받아오기,,
-            id=res.data[i].id
+            // id=res.data[i].id
+            console.log(res.data[i].writer)
             writer=res.data[i].writer
-            title=res.data[i].title.toString()
+            title=res.data[i].title
             contents=res.data[i].contents
             date=res.data[i].date
 
-            console.log(id, writer, title, contents,date)
 
-                //게시글 틀
+            //게시글 틀
             const post_list = `
                     <div class="post">
                     <div class="picture">
                         <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA2MTBfMjY2%2FMDAxNjU0ODQ1NTYxNTAz.SX6EYc6EHm3QGIHotelqLnCJofsYV4LcE5kKHampnsMg.Y8PLnE87Uuh5xrGonMF6Kk6NWLaGeGXcpkY5xHbh3Xog.JPEG.black_pig_%2F%25BE%25C8%25B5%25BF%25C2%25F2%25B4%25DF%25B0%25F1%25B8%25F1_%252821%2529.jpg&type=a340" width="200px" height="200px" />
                     </div>
                     <div class="text">
-                        <p class="title" id="title">`+title+`</p>
+                        <p class="title" id="title" onclick='location.href="view.html"'>`+title+`</p>
                         <div class="title_margin"></div>                
                         <p class="contents">`
                             +contents+
@@ -55,24 +49,11 @@
             // 리스트 노출
             document.getElementById('post_lists').innerHTML+=post_list;
             }
-
-
-        
-        //상세뷰 이동
-        post = document.getElementById('title')
-        post.onclick=function(){
-            location.href='view.html'
-            // 여기서 id를 보내주고 view.html에서 받으면 좋겟는데..
-        }
     });
-
 
     // 작성
     write_button = document.getElementById('write_button')
     write_button.onclick=function(){location.href='write.html'}
-
-
 </script>
-
 </body>
 </html>

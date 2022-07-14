@@ -17,8 +17,7 @@
         </div>
         <br />
         <div class="contents">
-            <!-- <input type="text" id='contents' placeholder="내용을 입력"/> -->
-            <textarea id="contents" placeholder="내용을 입력" ></textarea>
+            <input type="text" id='contents' placeholder="내용을 입력"/>
         </div>
     </div>
     </form>
@@ -82,9 +81,8 @@
         const con=confirm("초기화 하시겠습니까?");
         if (con===true){
             var inputs = document.getElementsByTagName('input');
-            var texta=document.getElementsByTagName('textarea')
             for (var i=0;i<inputs.length;i++){
-                if (inputs[i].type==='text'||texta===true) {
+                if (inputs[i].type==='text') {
                     inputs[i].value="";
                 }
             }

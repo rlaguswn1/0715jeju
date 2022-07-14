@@ -29,19 +29,16 @@
   margin: 0;
 }
 
-.contents input {
+.contents textarea {
   width: 492px;
   height: 300px;
+  resize: none;
 }
 
 .writer_date {
   margin: 0;
   display: flex;
   justify-content: space-between;
-}
-
-.contents {
-  margin: 0;
 }
 
 .buttons {
